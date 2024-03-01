@@ -10,6 +10,11 @@ CREATE EXTERNAL TABLE aeropuerto_tabla (
   aeronave STRING,
   pasajeros INT
 )
+comment 'Información de vuelos'
+row format delimited
+fields terminated by ','
+stored as textfile
+location '/table/informes_vuelos';
 
 CREATE EXTERNAL TABLE aeropuerto_detalles_tabla (
   aeropuerto STRING,
@@ -34,3 +39,8 @@ CREATE EXTERNAL TABLE aeropuerto_detalles_tabla (
   concesionado STRING,
   provincia STRING
 )
+comment 'Información de areopuertos'
+row format delimited
+fields terminated by ','
+stored as textfile
+location '/table/informes_aeropuertos';
