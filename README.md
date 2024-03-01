@@ -16,7 +16,7 @@ La forma de gestionar el contenedor es a través de la terminal mediante los com
 
 docker start hadoop
 
-docker exec -it edvai_hadoop bash
+docker exec -it hadoop bash
 
 ```
 
